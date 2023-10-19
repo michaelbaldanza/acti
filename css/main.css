@@ -1,0 +1,9 @@
+:root {
+  --text-font: "Mulish", "Montserrat", 'my-avenir', system-ui, Verdana, Futura, sans-serif;
+  --bc: #fcfcfc;
+}
+
+body {
+  font-family: var(--text-font);
+  background-color: var(--bc);
+}
