@@ -1,9 +1,42 @@
 :root {
   --text-font: "Mulish", "Montserrat", 'my-avenir', system-ui, Verdana, Futura, sans-serif;
   --bc: #fcfcfc;
+  --cc: #baacac;
 }
 
 body {
   font-family: var(--text-font);
   background-color: var(--bc);
+}
+
+.container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* margin: auto; */
+}
+
+.column {
+  min-width: var(--item-width);
+  min-height: var(--item-width);
+  border: 1px solid purple;
+  /* margin: 20px; */
+  z-index: 0;
+  background-color: var(--cc);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  background-color: orange;
+  z-index: 1;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
 }

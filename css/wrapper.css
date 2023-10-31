@@ -1,0 +1,39 @@
+:root {
+  --item-width: 300px;
+}
+
+/*
+let n = number of blocks to fit;
+let w = width of a block (including border and padding);
+let g = gap between each block
+
+width = nw + g * (n - 1)
+
+width = 1 * 302 + 20 * (1 - 1)
+*/
+#wrapper {
+  margin: 0 auto;
+  width: 302px;
+}
+
+/*
+width = 2 * 302 + 20 * (2 - 1
+min-width = nw + g * (n - 1)
+*/
+@media screen and (min-width: 624px) {
+  #wrapper {
+    width: 624px;
+  }
+}
+
+@media screen and (min-width: 946px) {
+  #wrapper {
+    width: 946px;
+  }
+}
+
+@media screen and (min-width: px) {
+  #wrapper {
+    width: 946px;
+  }
+}
